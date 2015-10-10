@@ -18,4 +18,5 @@
 - start nsqd and point it to nsqlookupd port `nsdq --lookupd-tcp-address=localhost:4160` (window 2)
 - `mkdir db` (window 3)
 - `mongod --dbpath ./db` (window 3)
--  
+- go to apps.twitter.com, and create a new app, then create an access token
+- note down API key, API secrete, Access token, Access token secrete and set it as `ENV` vars (see setup.sh)
