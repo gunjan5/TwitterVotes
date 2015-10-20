@@ -17,6 +17,21 @@ func closedb() {
 	log.Println("closed database connection")
 }
 
+type poll struct {
+	Options []string
+}
+
+func loadOptions() ([]string, error) {
+	var options []string
+	iter := db.DB("ballots").C("polls").Find(nil).Iter()
+	var p poll
+	for iter.Next(&p) {
+		options = append(options, p.Options...)
+	}
+	iter.Close()
+	return options, iter.Err()
+}
+
 func main() {
 
 }
