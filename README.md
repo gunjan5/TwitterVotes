@@ -20,3 +20,16 @@
 - `mongod --dbpath ./db` (window 3)
 - go to apps.twitter.com, and create a new app, then create an access token
 - note down API key, API secrete, Access token, Access token secrete and set it as `ENV` vars (see setup.sh)
+
+## What?!
+----------
+
+Hey, Macklemore! Can we go thrift shopping?
+
+What, what, what, what... 
+
+Bada, badada, badada, bada...
+
+I'm gonna pop some tags
+
+Only got twenty dollars in my pocket
